@@ -11,6 +11,7 @@ body
     background-color: blueviolet;
     justify-content: center;
     align-items: center;
+    color: aliceblue;
 }
 #game
 {
@@ -20,55 +21,55 @@ body
     width: 100%;
     justify-content: center;
     align-items: center;
-    background-color: aqua;
 }
 h3
 {
     position: absolute;
-    top: 50px;
-    font-size: 30px;
-    background-color: chartreuse;
+    top: 40px;
+    font-size: 2rem;
+    padding: 10px;
+    border-radius: 15px;
+    background-color: rgba(229, 255, 81, 0.616);
 }
 .counters
 {
     display: flex;
     justify-content: space-evenly;
     position: absolute;
-    top: 100px;
+    top: 140px;
     width: 100%;
-    font-size: 20px;
-    background-color: blue;
+    font-size: 1.8rem;
+    background-color: rgba(38, 0, 74, 0.295);
 }
 
 .player , .computer
 {
     display: flex;
     justify-content: space-evenly;
-    font-size: 7rem;
-    background-color: aliceblue;
-    width: 100%;
+    font-size: 10rem;
+    margin: 100px;
+    /* width: 100%; */
 }
 .player
 {
-   
     transform: rotate(-250deg) scaleX(-1);
 }
 .computer
 {
-    
     transform: rotate(250deg);
 }
 .btn-choices
 {
-    /* background: none; */
     position: absolute;
     display: flex;
-    justify-content: space-between;
-    
     border: none;
     outline: none;
     cursor: pointer;
     font-size: 3rem;
+    bottom: 5rem;
+    border-radius: 50%;
+    box-shadow: 0 5px 10px ;
+    background-color: blueviolet;
     transition: 100ms;
 }
 .btn-choices:hover
