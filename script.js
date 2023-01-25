@@ -1,24 +1,31 @@
 const game = document.getElementById('game');
  
-const showPlay = document.createElement('h3');
+const showPlay = document.createElement('h2');
+
 const resultPlay = document.createElement('div');
-resultPlay.classList.add('player')
+resultPlay.classList.add('player');
+
 const resultComputer = document.createElement('div');
-resultComputer.classList.add('computer')
-const counters = document.createElement('div')
-counters.classList.add('counters')
+resultComputer.classList.add('computer');
+
+const counters = document.createElement('div');
+counters.classList.add('counters');
+
 const counterP = document.createElement('span');
-counterP.innerHTML = 0
+counterP.innerHTML = 0;
+
 const counterC = document.createElement('span');
-counterC.innerHTML = 0 
+counterC.innerHTML = 0;
+
+const containerBtn = document.createElement('div');
+containerBtn.classList.add('containerBtn');
 
 counters.append(counterP,counterC)
-game.append(showPlay,counters,resultPlay,resultComputer);
+game.append(showPlay,counters,resultPlay,resultComputer,containerBtn);
 
 let choices = [rock = '✊', paper = '✋', scissors = '✌️']
 let player
 let computer
-
 
 
 
@@ -42,7 +49,7 @@ for (let i = 0; i < choices.length; i++) {
   button.id = choices[i]
   button.innerHTML = choices[i]
   button.addEventListener('click', handleClick)
-  game.appendChild(button)
+  containerBtn.appendChild(button)
 }
 
 const showResult = () => {

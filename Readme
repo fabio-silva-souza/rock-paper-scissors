@@ -1,0 +1,11 @@
+Here I just use Javascript and Css with the base a div #game in Html 
+
+The game Rock Paper Scissors 
+  Use: 
+createElement (for the game elements: Divs, Spans and button)
+
+append (to put the elements inside)
+
+math.floor and math.random (to the three options be random , paper scissors rock)
+
+switch case (for the win draw winComputer)
